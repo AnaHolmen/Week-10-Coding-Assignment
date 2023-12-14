@@ -23,7 +23,7 @@ function btnClickAppend() {
   removeCell.innerHTML =
     '<button class="btn btn-danger" onclick="removeRow(this)">Remove</button>';
 
-  // Append cells to the row
+  // Append/ add cells to the row
   newRow.appendChild(nameCell);
   newRow.appendChild(phoneCell);
   newRow.appendChild(positionCell);
@@ -31,7 +31,7 @@ function btnClickAppend() {
 
   console.log(nameCell, phoneCell, positionCell);
 
-  // Append the row to the table
+  // Append/ add the row to the table
   let tableBody = document.querySelector(".table-dark  tbody");
   console.log("tableBody:", tableBody);
   tableBody.appendChild(newRow);
