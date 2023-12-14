@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <!-- JQuery and Bootstrap JS -->
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <!-- JavaScript and CSS file -->
+  <script src="./java.js"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    /* Add background color to the body */
+    body {
+      background-color: #97edee; /* Set your desired background color */
+    }
+  </style>
+</head>
+<body>
+
+ <div class="container">
+      <div class="container mt-4 text-center">        
+        <h1 class="text-success, text-center">Data CO</h1>      
+      </div>
+      <div class="row">          
+        <div    
+          class="container col-lg-10 col-xl-8 bg-success-subtle rounded-3 p-3 mt-3 pb-1"
+        >
+        <!---Heading for my empployee database-->
+          <h3>Employee Database</h3>
+
+        <!--Table and table info -->
+          <table class="table table-bordered table-dark" >     
+            <tbody>
+            <thead>
+              <tr class="table-secondary">      
+                <th>Name</th>     
+                <th>Phone</th>   
+                <th>positon</th>
+                <th></th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row justify-content-center text-bg-success mt-4 mb-4">
+        <div class="col-md-6 col-xl-4 bg-success rounded-3 p-3">
+         <!--Heading for new employee section, imput for new employee name, number, position-->
+            <h3 class="mb-3">New Employee</h3>  
+          <div class="form-floating mb-3">     
+            <input
+              type="text" 
+              class="form-control"
+              id="inputName"
+              placeholder="John Doe"
+            />
+            <label for="inputName">Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="tel"
+              class="form-control"
+              id="inputPhone"
+              placeholder="555-555-1234"
+            />
+            <label for="inputPhone">Phone</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="inputPosition"
+              placeholder="John Doe"
+            />
+            <label for="inputPosition">Position</label>
+          </div>
+          <!--Button to add new employee to the database-->
+          <button type="submit" 
+          id="btnAppend" 
+          class="btn btn-dark w-100"
+          onclick="btnClickAppend()"
+          >ADD TO EMPLOYEE DATABASE
+        </button>
+        </div>
+      </div>
+    </div>    
+
+    <script src="./java.js"></script>
+  </body>
+</html>
